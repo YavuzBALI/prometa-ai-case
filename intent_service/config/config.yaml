@@ -6,4 +6,4 @@ logging:
 
 gemini:
   model_name: gemini-1.5-flash
-  api_key: AIzaSyCFSTCTzia2U5xESLW1p4D15mzfhL8QcKI
+  api_key: API-KEY
