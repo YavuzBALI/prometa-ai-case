@@ -1,0 +1,7 @@
+intent_service:
+  url: http://intent_service:8000/
+  post_service: analyze_intent
+
+log_service:
+  url: http://log_service:8001/
+  get_service: get_log

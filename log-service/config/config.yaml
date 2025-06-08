@@ -1,0 +1,9 @@
+api:
+  port: 8001
+
+database:
+  host: postgres
+  port: 5432
+  name: log_service
+  user: yavuzbali
+  password: prometa.ai

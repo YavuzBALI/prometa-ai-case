@@ -1,0 +1,37 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: log_service_db
+    restart: always
+    environment:
+      POSTGRES_USER: yavuzbali
+      POSTGRES_PASSWORD: prometa.ai
+      POSTGRES_DB: log_service
+    ports:
+      - "5432:5432"
+
+
+  intent_service:
+    build:
+      context: ./intent_service
+    container_name: intent_service_api
+    ports:
+      - "8000:8000"
+
+  streamlit:
+    build:
+      context: ./ui-service
+    container_name: ui_service_api
+    ports:
+      - "8501:8501"
+    expose:
+      - 8000
+
+  log_service:
+    build:
+      context: ./log-service
+    container_name: log_service_api
+    ports:
+      - "8001:8001"
