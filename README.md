@@ -2,7 +2,7 @@
 
 ## 📌 Project Information
 
-This project analyzes dialogues between a customer and a sales representative regarding the latest iPhone model. The system processes each sentence in the conversation to determine:
+This project analyzes dialogues between a customer and a sales representative. The system processes each sentence in the conversation to determine:
 
 - **User intent** (e.g., inquiry, purchase intention, complaint, greeting, package change, renewal, etc.)
 - **Sentiment** (positive, neutral, or negative)
